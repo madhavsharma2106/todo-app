@@ -1,6 +1,6 @@
-/*  
+/*
 JIT Compilation Code
-************************************* 
+*************************************
 
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
@@ -14,15 +14,8 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule);
  */
-
-/* 
-AOT Compilation Code   
-******************************/
-
-import { enableProdMode } from '@angular/core';
 import { platformBrowser } from '@angular/platform-browser';
-import { environment } from './environments/environment';
 import { AppModuleNgFactory } from '../aot/src/app/app.module.ngfactory';
-
 console.log('Running AOT compiled');
 platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
+//# sourceMappingURL=main.js.map
